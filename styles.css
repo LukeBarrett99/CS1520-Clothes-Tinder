@@ -1,18 +1,122 @@
-.FirstImage{
-    border-radius: 50%;
+.Profile-Pic-Container{
+    width: 420px;
+    height: 690px;
+    border: 1px solid black;
+    margin: 40px auto 0 auto;
+    position: relative;
 }
 
-.PhoneBackground{
-    background-image: url("https://preview.pixlr.com/images/800wm/1062/1/1062100171.jpg");
-    background-size: 600px;
-    width: 600px;
-    height: 600px;
-    border: 2px solid;
-    color: black;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
+.Picture {
+    height: 55%;
+    position: relative;
+    overflow: hidden;
 }
+
+.May {
+    height: 100%;
+    position: absolute;
+    left: -112px;
+}
+
+.name-box {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgba(0,0,0,1);
+    box-sizing:border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+}
+
+h2 {
+    padding-top: -0px;
+    padding-left: 20px;
+    color: #454344;
+    margin: 0;
+    margin-top: 10px;
+}
+
+p {
+    margin: 0;
+    margin-top: 10px;
+    color: grey;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.age {
+    padding-left: 6px;
+    font-weight: 200;
+  }
+
+ .Edit-Button {
+    position: absolute;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0,0,0,.4);
+    border-radius: 50%;
+    text-align: center;
+    top: 12px;
+    left: 12px;
+  }
+
+  .button {
+    padding-top: 4px;
+    fill: white;
+  }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(transparent , white 60%);
+    bottom: 6px;
+    text-align: center;
+  }
+
+  .Circle-Zone {
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  #Profile {
+    background-color: #FF4E68;
+    float: left;
+    margin-left: 20px;
+  }
+  
+  #Home {
+    background-color: #40A1FE;
+  }
+  
+  #Liked {
+    background-color: #5BC495;
+    float: right;
+    margin-right: 20px;
+  }
+
+  .back {
+    fill: white;
+    padding-top: 20px;
+    padding-right: 6px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .star {
+    fill: white;
+    padding-top: 10px;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .heart {
+    fill: white;
+    padding-top: 16px;
+    width: 40px;
+    height: 40px;
+  }
