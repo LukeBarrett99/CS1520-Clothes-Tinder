@@ -1,0 +1,30 @@
+{% extends '_base.html' %}
+{% block content %}
+
+    <body>
+        <div class = "topInterface">
+            <h1>Clinder</h1>
+        </div>
+        
+        <div class = clinderInterface>
+            
+            <div class = "cards">
+                <div class="card">
+                    <img src="/static/pants.jpg">
+                    <p>Bob's pants</p>
+                </div>
+                
+                <div class="card">
+                    <img src="/static/charlie.jpg">
+                    <p>Chuck's shirt</p>
+                </div>
+                
+            </div>
+
+            <div class = "likeButtons">
+                <button class="dislike">&#x2715;</button>
+                <button class="like">&#x2665;</button>
+            </div>
+        </div>  
+    </body>
+{% endblock %}

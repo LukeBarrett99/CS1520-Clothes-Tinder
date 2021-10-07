@@ -1,0 +1,294 @@
+.PhoneBackground{
+    background-image: url("https://preview.pixlr.com/images/800wm/1062/1/1062100171.jpg");
+    background-size: 600px;
+    width: 600px;
+    height: 600px;
+    border: 2px solid;
+    color: black;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+
+.topInterface {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5vh;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #e0bbe4;
+  font-family: sans-serif;
+}
+
+.clinderInterface {
+  height: 80vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 1;
+}
+
+.cards {
+  flex-grow: 1;
+  text-align: center;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.card {
+  display: inline-block;
+  width: 90vw;
+  max-width: 400px;
+  height: 60vh;
+  background: white;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card p {
+  margin-top: 24px;
+  font-size: 20px;
+  padding: 0 16px;
+}
+
+.likeButtons {
+  text-align: center;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.likeButtons button {
+  border-radius: 50%;
+  line-height: 60px;
+  width: 60px;
+  border: 0;
+  background: #ffffff;
+  display: inline-block;
+  margin: 0 8px;
+  overflow: hidden;
+}
+
+.dislike {
+  font-size: 35px;
+  color: grey;
+}
+
+.like {
+  font-size: 30px;
+  color: red;
+}
+
+.Profile-Pic-Container{
+    width: 420px;
+    height: 690px;
+    border: 1px solid black;
+    margin: 40px auto 0 auto;
+    position: relative;
+}
+
+.Picture {
+    height: 55%;
+    position: relative;
+    overflow: hidden;
+}
+
+.May {
+    height: 100%;
+    position: absolute;
+    left: -112px;
+}
+
+.name-box {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgba(0,0,0,1);
+    box-sizing:border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+}
+
+h2 {
+    padding-top: -0px;
+    padding-left: 20px;
+    color: #454344;
+    margin: 0;
+    margin-top: 10px;
+}
+
+p {
+    margin: 0;
+    margin-top: 10px;
+    color: grey;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.age {
+    padding-left: 6px;
+    font-weight: 200;
+  }
+
+  .dots-up {
+    position: absolute;
+    transform: rotate(90deg);
+    fill: #FE4F68;
+    right: 10px;
+    top: -4px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(transparent , white 60%);
+    bottom: 6px;
+    text-align: center;
+  }
+
+  .Circle-Zone {
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  #Profile {
+    background-color: gray;
+    float: left;
+    margin-left: 20px;
+  }
+
+  /*#Profile-Link {
+      width: 24;
+      height: 24;
+      background-color: #FE4F68;
+  }*/
+  
+  #Home {
+    background-color: grey;
+  }
+  
+  #Liked {
+    background-color: grey;
+    float: right;
+    margin-right: 20px;
+  }
+
+  .back {
+    fill: white;
+    padding-top: 10px;
+    padding-right: 6px;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .star {
+    fill: white;
+    padding-top: 10px;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .heart {
+    fill: white;
+    padding-top: 16px;
+    width: 40px;
+    height: 40px;
+  }
+
+h1{
+  text-align: center;
+
+}
+
+.card {display:inline-block;}
+
+.rounded-circle {
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    /* commented for demo
+    float: left;
+    margin-left: 125px;
+    margin-top: 20px;
+    */
+    
+    /*for demo*/
+    display:inline-block;
+    vertical-align:middle;
+}
+/* overall slider */ 
+.glider{
+  font-family: Basetica Medium;
+  font-size: 10px; 
+  color: black;
+  position: relative;
+  max-width: 100%;
+  top: 100px;
+  border-color: blanchedalmond;
+}
+
+/* adjusts overall size of image*/ 
+.slider-image{
+  width: 550px;
+  height: 500px;
+  object-fit: cover; 
+}
+
+/* button that is on the left*/
+
+.glider-prev{
+  position: relative;
+  top: 325px;
+  left: 10px; 
+  float: left;
+}
+/* button that is on the right*/
+.glider-next{
+  position: relative;
+  top: 325px;
+  right: 10px; 
+  float: right;
+  
+}
+
+/* dots on bottom, still need to figure out how to move*/ 
+.glider-dots{
+  position: relative;
+}
+
+.card-img-top{
+  height: 290px;
+  width: 100%
+ }
