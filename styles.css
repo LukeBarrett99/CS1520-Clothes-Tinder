@@ -1,4 +1,4 @@
-.Phone-Zone{
+/* .Phone-Zone{
     width: 420px;
     height: 690px;
     border: 1px solid black;
@@ -86,65 +86,3 @@ h1{
     bottom: auto;
 }
 .card {display:inline-block;}
-
-.rounded-circle {
-    width: 185px;
-    height: 185px;
-    border-radius: 50%;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    overflow: hidden;
-    background-color: rgb(0, 0, 0);
-    /* commented for demo
-    float: left;
-    margin-left: 125px;
-    margin-top: 20px;
-    */
-    
-    /*for demo*/
-    display:inline-block;
-    vertical-align:middle;
-}
-/* overall slider */ 
-.glider{
-  font-family: Basetica Medium;
-  font-size: 10px; 
-  color: black;
-  position: relative;
-  max-width: 100%;
-  top: 100px;
-  border-color: blanchedalmond;
-}
-
-/* adjusts overall size of image*/ 
-.slider-image{
-  width: 550px;
-  height: 500px;
-  object-fit: cover; 
-}
-
-/* button that is on the left*/
-
-.glider-prev{
-  position: relative;
-  top: 325px;
-  left: 10px; 
-  float: left;
-}
-/* button that is on the right*/
-.glider-next{
-  position: relative;
-  top: 325px;
-  right: 10px; 
-  float: right;
-  
-}
-
-/* dots on bottom, still need to figure out how to move*/ 
-.glider-dots{
-  position: relative;
-}
-
-.card-img-top{
-  height: 290px;
-  width: 100%
- }
