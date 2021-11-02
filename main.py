@@ -1,4 +1,5 @@
 import flask
+from flask import Flask, jsonify, request, render_template
 import user
 import init
 
@@ -17,7 +18,9 @@ us = user.User()
 def root():
     # use render_template to convert the template code to HTML.
     # this function will look in the templates/ folder for your file.
-    return flask.render_template('homepage.html', page_title='Main Page')
+    # return flask.render_template('homepage.html', page_title='Main Page')
+    return flask.render_template('homepage.html', clothes=init.clothes, index=us.index)
+
 
 @app.route('/profile_screen.html')
 def profile():
@@ -32,12 +35,19 @@ def like():
 @app.route('/homepage.html')
 def home():
     return flask.render_template('homepage.html', clothes=init.clothes, index=us.index)
+    # return flask.redirect("homepage.html", clothes=init.clothes, index=us.index)
 
 #point javascript requests to these two listeners!
 @app.route('/liked', methods=['POST','GET'])
 def received_like():
-    clothingIndex = flask.request.form['clothingIndex']
-    us.add_like(init.clothes[clothingIndex])
+    # clothingIndex = flask.request.form['clothingIndex']
+    # us.add_like(init.clothes[clothingIndex])
+    if request.method == 'POST':
+        print('Incoming..')
+        print(request.get_json())  # parse as JSON
+        response = request.get_json()
+        us.add_like( init.clothes[int(response["imageAddress"])] )
+        return 'OK', 200    
     #choose one - either send the index of the clothes or the clothing object itself
     #clothing = flask.request.form['clothing']
     #us.add_like(init.clothes[clothing])
