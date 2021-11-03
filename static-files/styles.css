@@ -13,11 +13,11 @@
   bottom: auto;
 }
 
-.topInterface {
+/* .topInterface {
   display: flex;
   justify-content: center;
   padding-top: 2.5vh;
-}
+} */
 
 .Profile-Pic-Container {
   width: 420px;
@@ -145,78 +145,23 @@ h1 {
   text-align: center;
 }
 
-.card {
-  display: inline-block;
-}
+/* START OF LIKESCREEN CSS... */
 
-.rounded-circle {
-  width: 185px;
-  height: 185px;
-  border-radius: 50%;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  overflow: hidden;
-  background-color: rgb(0, 0, 0);
-  /* commented for demo
-    float: left;
-    margin-left: 125px;
-    margin-top: 20px;
-    */
-
-  /*for demo*/
-  display: inline-block;
-  vertical-align: middle;
-}
-/* overall slider */
-.glider {
-  font-family: Basetica Medium;
-  font-size: 10px;
-  color: black;
+.Phone-Zone {
+  width: 420px;
+  height: 650px;
+  border: 1px solid black;
+  margin: 40px auto 0 auto;
   position: relative;
-  max-width: 100%;
-  top: 100px;
-  border-color: blanchedalmond;
-}
-
-/* adjusts overall size of image*/
-.slider-image {
-  width: 550px;
-  height: 500px;
-  object-fit: cover;
-}
-
-/* button that is on the left*/
-
-.glider-prev {
-  position: relative;
-  top: 325px;
-  left: 10px;
-  float: left;
-}
-/* button that is on the right*/
-.glider-next {
-  position: relative;
-  top: 325px;
-  right: 10px;
-  float: right;
-}
-
-/* dots on bottom, still need to figure out how to move*/
-.glider-dots {
-  position: relative;
-}
-
-.card-img-top {
-  height: 290px;
-  width: 100%;
 }
 
 /*Card */
-.card {
+.clinderCard {
   font-size: 14px;
   line-height: 200px;
   text-align: center;
-  width: 150px;
-  height: 200px;
+  width: 450px;
+  height: 500px;
   /* display: block; */
   padding: 20px;
   display: flex;
@@ -227,11 +172,14 @@ h1 {
   transform-origin: 50% 99%;
 }
 
-.card img {
+.clinderCard img {
   max-width: 100%;
 }
 
 .cardcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   text-align: center;
   width: 150px;
@@ -248,7 +196,7 @@ h1 {
   margin: 0;
   padding: 0;
 }
-.clinder .list .card {
+.clinder .list .clinderCard {
   display: none;
 }
 .clinder .list .current {
@@ -272,33 +220,46 @@ h1 {
 }
 
 .cardcontainer button {
-  background: #0c0;
+  /* background: #0c0; */
   border: none;
   color: #fff;
   border-radius: 50% 50%;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   line-height: 30px;
-  margin: 0 1.5em;
+
+  /* margin: 0 .5em; */
   display: inline-block;
+  /* position: absolute; */
+  /* bottom: 170px;
+
+  padding: 20px; */
+  /* text-align: center; */
 }
 .cardcontainer button:focus {
   outline: 0;
-  background: #0f0;
+  background: rgb(19, 168, 19);
 }
 .cardcontainer .but-dislike {
   background: #c00;
+
+  /* left: 650px; */
+}
+.cardcontainer .but-like {
+  background: rgb(9, 124, 9);
+
+  /* left: 750px; */
 }
 .cardcontainer .but-dislike:focus {
   outline: 0;
   background: #f00;
 }
 
-.clinder .cardcontainer.yes .card {
+.clinder .cardcontainer.yes .clinderCard {
   -webkit-animation: yay 0.7s ease-out;
   animation: yay 0.7s ease-out;
 }
-.clinder .cardcontainer.nope .card {
+.clinder .cardcontainer.nope .clinderCard {
   -webkit-animation: nope 0.7s ease-out;
   animation: nope 0.7s ease-out;
 }
@@ -349,4 +310,171 @@ h1 {
     -webkit-transform: rotate(-40deg) translateY(-80px);
     opacity: 0;
   }
+}
+
+/* START OF LIKESCREEN CSS... */
+
+h1 {
+  text-align: center;
+  font-family: Basetica Medium;
+  padding-top: 10px;
+}
+
+.card {
+  font-family: Basetica Medium;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button {
+  color: white;
+}
+header {
+  background: #000;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 20px 0;
+  padding-left: 50px;
+}
+
+nav {
+  float: right;
+  padding-right: 20px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: rgb(126, 125, 125);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: rgb(138, 138, 138);
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  display: table;
+}
+
+.carousel {
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel__photo {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 5px;
+  padding-top: 20px;
+  z-index: 100;
+
+  overflow: hidden;
+}
+
+.carousel__photo.initial,
+.carousel__photo.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.carousel__photo.prev,
+.carousel__photo.next {
+  z-index: 800;
+}
+.carousel__photo.prev {
+  transform: translateX(-100%); /* Move 'prev' item to the left */
+}
+.carousel__photo.next {
+  transform: translateX(300%); /* Move 'next' item to the right */
+}
+
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001; /* Sit on top of everything */
+  border: 1px solid black;
+}
+.carousel__button--prev {
+  left: 0;
+}
+.carousel__button--next {
+  right: 0;
+}
+
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
